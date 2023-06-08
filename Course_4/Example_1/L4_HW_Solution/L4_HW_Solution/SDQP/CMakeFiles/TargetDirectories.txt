@@ -1,0 +1,3 @@
+/home/pizhou/chapter_4/SDQP/CMakeFiles/rebuild_cache.dir
+/home/pizhou/chapter_4/SDQP/CMakeFiles/sdqp_example.dir
+/home/pizhou/chapter_4/SDQP/CMakeFiles/edit_cache.dir

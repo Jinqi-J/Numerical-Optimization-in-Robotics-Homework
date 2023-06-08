@@ -1,0 +1,3 @@
+./sdqp_example 1e-4
+The program will ouput x and the optimal value.
+For more information, please see the committed homework.

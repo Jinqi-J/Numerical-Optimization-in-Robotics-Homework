@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++11 -O3 -Wall -fPIC  -rdynamic CMakeFiles/sdqp_example.dir/example/sdqp_example.cpp.o  -o sdqp_example 

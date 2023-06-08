@@ -1,0 +1,7 @@
+<launch>
+
+    <node pkg="collision_distance_computation" name="collision_distance_computation_node" type="collision_distance_computation_node" output="screen"/>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find collision_distance_computation)/launch/show.rviz"/> 
+
+</launch>

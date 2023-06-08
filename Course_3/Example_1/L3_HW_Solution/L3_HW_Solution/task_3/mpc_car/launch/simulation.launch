@@ -1,0 +1,16 @@
+<launch>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find car_simulator)/config/rviz_sim.rviz">
+  </node>
+
+  <node pkg="nodelet" type="nodelet" name="manager" args="manager" output="screen">
+    <param name="num_worker_threads" value="4"/>
+  </node>
+  <include file="$(find car_simulator)/launch/car_simulator.launch"/>
+  <node pkg="nodelet" type="nodelet" name="mpc_car" args="load mpc_car/Nodelet manager" output="screen">
+    <rosparam file="$(find mpc_car)/config/mpc_car.yaml"/>
+    <remap from="~odom" to="odom"/>
+    <remap from="~car_cmd" to="car_cmd"/>
+  </node>
+
+</launch>
